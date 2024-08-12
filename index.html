@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
+      <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 6px; padding: 10px;">
+        <div style="width: 96%; background-color: #17aae0; height: 180px; padding: 10px 2%; border-radius: 8px;">
+          <div style="width: 100%; text-align: center">
+            <img style="width: 70px; display: inline-block" src="${projectLogo}" alt="Sky Tire"/>
+          </div>
+          <h5 style="line-height: 0px">Order ${orderNo}</h5>
+          <h2 style="color: #fff; line-height: 10px">Hi ${user},</h2>
+          <h2 style="line-height: 5px">here's your order confirmation.</h2>
+        </div>
+        <div>
+          <div style="width: 100%; max-width: 600px; padding: 20px; box-sizing: border-box;">
+            <h2 style="margin-bottom: 20px">Order Status</h2>
+            <table style="width: 100%; border-collapse: collapse">
+              <tr style="margin-bottom: 20px">
+                <td style="width: 50px; padding: 0 10px">
+                  <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #17aae0; border: 2px solid #17aae0; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+                    <span style="color: #fff; font-size: 14px">✓</span>
+                  </div>
+                  <div style="width: 0.5px; height: 25px; background-color: #17aae0; border: 2px solid #17aae0; margin: 0 auto;"></div>
+                </td>
+                <td style="padding: 0 10px; vertical-align: top">
+                  <p style="font-size: 16px; font-weight: bold; margin: 0; color: #17aae0;">Order confirmed.</p>
+                </td>
+              </tr>
+              <tr style="position: relative; margin-bottom: 20px">
+                <td style="width: 50px; padding: 0 10px">
+                  <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #fff; border: 2px dashed #17aae0; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+                    <span style="color: #fff; font-size: 14px"></span>
+                  </div>
+                  <div
+                    style="width: 0.5px; height: 25px; background-color: #ddd; border: 2px solid #ddd; margin: 0 auto;"></div>
+                </td>
+                <td style="padding: 0 10px; vertical-align: top">
+                  <p style="font-size: 16px; font-weight: bold; margin: 0">Ready for shipment</p>
+                  <p style="font-size: 14px; color: #666; margin: 0; margin-top: 4px;">Typically ships today</p>
+                </td>
+              </tr>
+              <tr style="position: relative; margin-bottom: 20px">
+                <td style="width: 50px; padding: 0 10px; position: relative">
+                  <div
+                    style="width: 20px; height: 20px; border-radius: 50%; background-color: #fff; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+                    <span style="color: #fff; font-size: 14px"></span>
+                  </div>
+                </td>
+                <td style="padding: 0 10px; vertical-align: top">
+                  <p style="font-size: 16px; font-weight: bold; margin: 0; color: #000;">Pending delivery</p>
+                  <p style="font-size: 14px; color: #666; margin: 0; margin-top: 4px;">Estimated business days to delivery: ${deliveryDays} day(s)</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div style="width: 80%; height: 2px; background-color: #ddd; margin: 10% 10% 0;"></div>
+        </div>
+        <div>
+          <div style="width: 100%; max-width: 600px; padding: 20px; box-sizing: border-box;">
+            <h2 style="margin-bottom: 20px">Your Order</h2>
+            <table style="width: 100%; border-collapse: collapse">
+              <!-- Loop Start -->
+              <tr style="margin-bottom: 20px">
+                <td style="width: 45%">
+                  <div style="width: 100%; height: 100px; text-align: center">
+                    <img style="width: 70px; display: inline-block" src="${productImage}" alt="Sky Tire"/>
+                  </div>
+                </td>
+                <td style="width: 55%; vertical-align: center; text-align: start;">
+                  <p style="font-size: 18px; font-weight: bold; margin: 2px 0">${productBrand}</p>
+                  <p style="font-size: 14px; margin: 2px 0; color: #666">${productModel}</p>
+                  <p style="font-size: 14px; margin: 2px 0; color: #666">${productSize}</p>
+                  <p style="font-size: 14px; margin: 2px 0; color: #666">Qty: ${productQuantity}</p>
+                </td>
+              </tr>
+              <!-- Loop End -->
+            </table>
+          </div>
+          <div style="width: 80%; height: 2px; background-color: #ddd; margin: 10% 10% 0;"></div>
+        </div>
+        <div>
+          <div style="width: 100%; max-width: 600px; padding: 20px; box-sizing: border-box; margin-top: 5%;">
+            <div style="width: 100%; max-width: 600px; margin: 0 auto">
+              <h4 style="margin-bottom: 20px">BREAKDOWN</h4>
+              <table style="width: 100%">
+                <!-- Loop Start -->
+                <tr>
+                  <td style="padding: 10px 0; font-size: 14px; color: #666">
+                    ${productBrand} + " " + ${productModel} x ${productQuantity}
+                  </td>
+                  <td style="padding: 10px 0; font-size: 14px; text-align: right; font-weight: bold;">$${productPrice} x ${productQuantity}</td>
+                </tr>
+                <!-- Loop End -->
+                <tr>
+                  <td style="padding: 10px 0; font-size: 14px; color: #666">Tire Replacement Coverage</td>
+                  <td style="padding: 10px 0; font-size: 14px; text-align: right; font-weight: bold;">$${replacementCoveragePrice}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px 0; font-size: 14px; color: #666">24/7 roadside assistance</td>
+                  <td style="padding: 5px 0; font-size: 14px; text-align: right; font-weight: bold;">$${roadsideAssistancePrice}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div style="width: 80%; height: 2px; background-color: #ddd; margin: 10% 10% 0;"></div>
+        </div>
+        <div>
+          <div style="width: 100%; max-width: 600px; padding: 20px; box-sizing: border-box; margin-top: 5%;">
+            <table style="width: 100%; border-collapse: collapse">
+              <tr>
+                <td style="padding: 0 10px">
+                  <p style="font-size: 14px; color: #666">Shipping & Handling</p>
+                </td>
+                <td style="padding: 0 10px; text-align: right">
+                  <p style="font-size: 14px; font-weight: bold">$ ${shippingAndHandlingPrice}</p>
+                </td>
+              </tr>
+              <tr><td colspan="2" style="padding: 0 10px"></td></tr>
+              <tr>
+                <td style="padding: 0 10px">
+                  <p style="font-size: 14px; font-weight: bold">Estimated delivery time</p>
+                </td>
+                <td style="padding: 0 10px; text-align: right"></td>
+              </tr>
+              <tr>
+                <td style="padding: 0 10px">
+                  <p style="font-size: 14px; color: #666">${productBrand} + " " + ${productModel} x ${productQuantity}</p>
+                </td>
+                <td style="padding: 0 10px; text-align: right">
+                  <p style="font-size: 14px; font-weight: bold">${deliveryDays} Day(s)</p>
+                </td>
+              </tr>
+              <tr><td colspan="2" style="padding: 0 10px"></td></tr>
+              <tr>
+                <td colspan="2" style="padding: 0 10px">
+                  <p style="font-size: 14px; font-weight: bold">SHIPPING TO</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="padding: 0 10px">
+                  <p style="font-size: 14px; color: #666">${deliveryAddress}</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div style="width: 80%; height: 2px; background-color: #ddd; margin: 10% 10% 0;"></div>
+        </div>
+        <div>
+          <div style="width: 100%; max-width: 600px; padding: 20px; box-sizing: border-box;">
+            <table style="width: 100%; border-collapse: collapse">
+              <tr>
+                <td style="padding: 0 10px"><h3>Sub total</h3></td>
+                <td style="padding: 0 10px; text-align: right">
+                  <p style="font-size: 14px; font-weight: bold">$${subTotalPrice}</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div style="width: 80%; height: 2px; background-color: #ddd; margin: 0 10%;"></div>
+        </div>
+        <div>
+          <div style="width: 100%; max-width: 600px; padding: 20px; box-sizing: border-box;">
+            <table style="width: 100%; border-collapse: collapse">
+              <tr>
+                <td style="padding: 0 10px">
+                  <p style="font-size: 14px; color: #666">Sales tax</p>
+                </td>
+                <td style="padding: 0 10px; text-align: right">
+                  <p style="font-size: 14px; font-weight: bold">$${salesTaxPrice}</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 0 10px">
+                  <p style="font-size: 14px; color: #666">State fees</p>
+                </td>
+                <td style="padding: 0 10px; text-align: right">
+                  <p style="font-size: 14px; font-weight: bold">$${stateFeesPrice}</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div style="width: 80%; height: 2px; background-color: #ddd; margin: 0 10%;"></div>
+        </div>
+        <div>
+          <div style="width: 100%; max-width: 600px; padding: 20px; box-sizing: border-box;">
+            <table style="width: 100%; border-collapse: collapse">
+              <tr>
+                <td style="padding: 0 10px"><h3>Total</h3></td>
+                <td style="padding: 0 10px; text-align: right">
+                  <p style="font-size: 14px; font-weight: bold">$${totalPrice}</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

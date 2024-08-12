@@ -1,0 +1,49 @@
+{
+  "name": "backend-sky-tire",
+  "version": "1.0.0",
+  "description": "Backend of Sky Tire. An Ecommerce Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moaz-ze69/server-sky-tire.git"
+  },
+  "author": "Muhammad Moaz Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moaz-ze69/server-sky-tire/issues"
+  },
+  "homepage": "https://github.com/moaz-ze69/server-sky-tire#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "gaxios": "^6.7.0",
+    "googleapis": "^140.0.1",
+    "joi": "^17.13.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.4",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0",
+    "path": "^0.12.7",
+    "socket.io": "^4.7.5",
+    "stripe": "^15.12.0",
+    "superagent": "^9.0.2"
+  }
+}
